@@ -1,1 +1,19 @@
-system.log
+#Ignoramos el fichero system.log 
+*.log
+!system.log
+log*
+l*g
+#Carpeta class
+class/
+#a.log b.log c.log
+[abc].log
+#Un único caracter, fichero_a.txt, fichero_b.txt ... 
+#fichero_?.txt
+#fichero_1.txt fichero_2.txt ... 
+#fichero_[0-9].txt
+#Directorios anidados, class/log/main class/clase/main /class/src/main 
+class/**/main
+class/**/java 
+
+
+
